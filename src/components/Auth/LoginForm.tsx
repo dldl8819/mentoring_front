@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import api from '../../api/axios';
 
 export default function LoginForm({ onLogin }: { onLogin: () => void }) {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('mentor@demo.com');
+  const [password, setPassword] = useState('password123');
   const [error, setError] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {

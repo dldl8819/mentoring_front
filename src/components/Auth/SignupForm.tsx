@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import api from '../../api/axios';
 
 export default function SignupForm({ onSignup }: { onSignup: () => void }) {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [role, setRole] = useState('mentee');
-  const [name, setName] = useState('');
+  const [email, setEmail] = useState('mentor@demo.com');
+  const [password, setPassword] = useState('password123');
+  const [role, setRole] = useState('mentor');
+  const [name, setName] = useState('김멘토');
   const [error, setError] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {

@@ -10,10 +10,10 @@ const PLACEHOLDER = {
 export default function ProfileForm() {
   const [file, setFile] = useState<File | null>(null);
   const [imageUrl, setImageUrl] = useState('');
-  const [name, setName] = useState('');
-  const [bio, setBio] = useState('');
-  const [role, setRole] = useState<'mentor' | 'mentee'>('mentee');
-  const [skills, setSkills] = useState('');
+  const [name, setName] = useState('김멘토');
+  const [bio, setBio] = useState('10년차 프론트엔드 개발자입니다. React와 TypeScript 전문가로 활동하고 있습니다.');
+  const [role, setRole] = useState<'mentor' | 'mentee'>('mentor');
+  const [skills, setSkills] = useState('React,TypeScript,JavaScript,Node.js');
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
 

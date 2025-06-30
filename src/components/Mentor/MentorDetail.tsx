@@ -33,7 +33,7 @@ export default function MentorDetail() {
   const [mentor, setMentor] = useState<Mentor | null>(null);
   const [loading, setLoading] = useState(true);
   const [requestDialogOpen, setRequestDialogOpen] = useState(false);
-  const [requestMessage, setRequestMessage] = useState('');
+  const [requestMessage, setRequestMessage] = useState('안녕하세요! 프론트엔드 개발을 배우고 있는 신입 개발자입니다. React와 TypeScript를 더 깊이 있게 학습하고 싶어서 멘토링을 신청합니다. 현재 개인 프로젝트를 진행 중이며, 실무 경험이 풍부한 멘토님께 코드 리뷰와 개발 방향성에 대한 조언을 받고 싶습니다.');
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
